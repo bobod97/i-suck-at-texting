@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>App QR Code</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <style>
+        body { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; background: #222; color: white; font-family: sans-serif; }
+        h1 { margin-bottom: 20px; }
+        #qrcode { background: white; padding: 20px; border-radius: 10px; }
+        p { margin-top: 20px; font-size: 1.2em; color: #aaa; }
+    </style>
+</head>
+<body>
+    <h1>Scan to Open App</h1>
+    <div id="qrcode"></div>
+    <p>exp://1TWAVtk.anonymous.mobile.exp.direct:80</p>
+
+    <script>
+        new QRCode(document.getElementById("qrcode"), "exp://1TWAVtk.anonymous.mobile.exp.direct:80");
+    </script>
+</body>
+</html>
+
