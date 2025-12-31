@@ -326,7 +326,7 @@ export default function App() {
                 <View style={styles.modalHandle} />
                 
                 <View style={styles.modalHeader}>
-                  <Text style={styles.modalTitle}>💬 Drafts</Text>
+                  <Text style={styles.modalTitle}>💬 {selectedTone}</Text>
                   <TouchableOpacity onPress={() => setModalVisible(false)} style={styles.closeButton}>
                     <X color="#fff" size={20} />
                   </TouchableOpacity>
