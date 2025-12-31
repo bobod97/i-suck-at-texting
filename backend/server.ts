@@ -353,13 +353,13 @@ app.post('/generate', async (req, res) => {
     // Final Enforcer
     messageContent.push({
       type: "text",
-      text: `Analyze the screenshots and generate the responses.`
+      text: `CRITICAL: Generate EXACTLY 4 responses. Not 3, not 5 - EXACTLY 4. Return a JSON array with 4 strings.`
     });
 
     console.log('Sending to Claude (Sonnet 4.5)...');
     const response = await anthropic.messages.create({
       model: "claude-sonnet-4-5-20250929", 
-      max_tokens: 450,
+      max_tokens: 1000,
       system: systemPrompt, // USING SYSTEM PARAMETER
       messages: [
         {
