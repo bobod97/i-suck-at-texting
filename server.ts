@@ -49,7 +49,7 @@ app.post('/generate', async (req, res) => {
 
             When given a screenshot of a text conversation:
             1. Read what the other person said
-            2. Generate exactly 5 reply options that are EXTREMELY cringey
+            2. Generate exactly 4 reply options that are EXTREMELY cringey
 
             Keep replies 2-3 sentences. Maximum awkwardness.`;
         } else if (tone === 'Empathetic') {
@@ -57,13 +57,13 @@ app.post('/generate', async (req, res) => {
 
             When given a screenshot of a text conversation:
             1. Feel what they're feeling. Absorb their emotional state completely.
-            2. Generate exactly 5 reply options that are INTENSELY empathetic`;
+            2. Generate exactly 4 reply options that are INTENSELY empathetic`;
         } else if (tone === 'Flirty') {
             systemPrompt = `You're AGGRESSIVELY flirty. Not subtleÃ¢â‚¬â€bold, confident, and dripping with sexual tension. Every message is charged. Push boundaries. Be suggestive without being explicit. Make them blush, make them nervous, make them want more. You're not just flirtingÃ¢â‚¬â€you're seducing through text. Dangerous energy. The kind of texts that make someone's heart race.
 
             When given a screenshot of a text conversation:
             1. Read the chemistry and find opportunities to flirt HARD
-            2. Generate exactly 5 INTENSELY FLIRTY reply options`;
+            2. Generate exactly 4 INTENSELY FLIRTY reply options`;
         } else if (tone === 'Roast') {
             systemPrompt = `You're a SAVAGE roast comedian who ONLY speaks in devastating one-liner insults. NO swearing. EVERY response must be a clever, quotable burn like these:
 
@@ -85,7 +85,7 @@ app.post('/generate', async (req, res) => {
 
             When given a screenshot of a text conversation:
             1. Look at what they said
-            2. Generate exactly 5 CLEVER one-liner roasts in this style
+            2. Generate exactly 4 CLEVER one-liner roasts in this style
 
             EVERY response should be a quotable burn. No swearing. Maximum wit.`;
         } else if (tone === 'Professional') {
@@ -93,13 +93,13 @@ app.post('/generate', async (req, res) => {
 
             When given a screenshot of a text conversation:
             1. Analyze the context with excessive formality
-            2. Generate exactly 5 reply options that are RIDICULOUSLY formal`;
+            2. Generate exactly 4 reply options that are RIDICULOUSLY formal`;
         } else if (tone === 'Dramatic') {
             systemPrompt = `You're CATASTROPHICALLY dramatic. Every single thing is life or death. Shakespearean levels of theatrics. Threaten to faint. Declare you'll never recover. Act like this is the greatest betrayal/joy in human history. Use phrases like "I simply cannot go on" and "this has shattered me to my very core" over absolutely nothing. Maximum melodrama.
 
             When given a screenshot of a text conversation:
             1. Read what the other person said
-            2. Generate exactly 5 reply options that are EXTREMELY dramatic
+            2. Generate exactly 4 reply options that are EXTREMELY dramatic
 
             Keep replies 2-3 sentences. Maximum theatrics.`;
         } else if (tone === 'Simp') {
@@ -107,7 +107,7 @@ app.post('/generate', async (req, res) => {
 
             When given a screenshot of a text conversation:
             1. Read what the other person said
-            2. Generate exactly 5 reply options that are PATHETICALLY simpy
+            2. Generate exactly 4 reply options that are PATHETICALLY simpy
 
             Keep replies 2-3 sentences. Maximum desperation.`;
         } else if (tone === 'Drunk') {
@@ -115,7 +115,7 @@ app.post('/generate', async (req, res) => {
 
             When given a screenshot of a text conversation:
             1. Read what the other person said
-            2. Generate exactly 5 reply options that sound WASTED
+            2. Generate exactly 4 reply options that sound WASTED
 
             Keep replies 2-3 sentences. Lots of typos. Pure chaos.`;
         } else if (tone === 'Pickup Line') {
@@ -123,7 +123,7 @@ app.post('/generate', async (req, res) => {
 
             When given a screenshot of a text conversation:
             1. Read what the other person said
-            2. Generate exactly 5 reply options with TERRIBLE pickup lines
+            2. Generate exactly 4 reply options with TERRIBLE pickup lines
 
             Keep replies 2 sentences max. Maximum cringe.`;
         } else if (tone === 'Demolish') {
@@ -133,7 +133,7 @@ app.post('/generate', async (req, res) => {
 
             When given a screenshot of a text conversation:
             1. Look at what the other person said
-            2. Generate exactly 5 reply options that are BRUTAL and full of swearing
+            2. Generate exactly 4 reply options that are BRUTAL and full of swearing
 
             You're roasting THEM, not me. Maximum aggression. SWEAR A LOT.`;
         } else if (tone === 'Brainrot') {
@@ -141,7 +141,7 @@ app.post('/generate', async (req, res) => {
 
             When given a screenshot of a text conversation:
             1. Read what the other person said
-            2. Generate exactly 5 reply options in EXTREME brainrot speak
+            2. Generate exactly 4 reply options in EXTREME brainrot speak
 
             Keep replies 2 sentences max. Maximum internet poisoning.`;
         } else {
@@ -149,7 +149,7 @@ app.post('/generate', async (req, res) => {
 
             When given a screenshot of a text conversation:
             1. Read what the other person said
-            2. Generate exactly 5 reply options in this extreme style`;
+            2. Generate exactly 4 reply options in this extreme style`;
         }
     } else {
         // NORMAL versions - ORIGINAL PROMPTS UNCHANGED
@@ -158,7 +158,7 @@ app.post('/generate', async (req, res) => {
 
             When given a screenshot of a text conversation:
             1. Read what the other person said
-            2. Generate exactly 5 reply options that are painfully cringey
+            2. Generate exactly 4 reply options that are painfully cringey
 
             Keep replies 2-3 sentences. Maximum awkwardness.`;
         } else if (tone === 'Empathetic') {
@@ -168,7 +168,7 @@ app.post('/generate', async (req, res) => {
 
             When given a screenshot of a text conversation:
             1. Feel what they're feeling. Absorb their emotional state completely.
-            2. Generate exactly 5 reply options that make them feel truly held.
+            2. Generate exactly 4 reply options that make them feel truly held.
 
             Your replies should:
             - Acknowledge their pain/feelings FIRST before anything else
@@ -187,7 +187,7 @@ app.post('/generate', async (req, res) => {
 
             When given a screenshot of a text conversation:
             1. Read the chemistry and find opportunities to flirt
-            2. Generate exactly 5 FLIRTY reply options
+            2. Generate exactly 4 FLIRTY reply options
 
             Your replies MUST:
             - Be obviously flirtatious - compliments, teasing, innuendo
@@ -221,7 +221,7 @@ app.post('/generate', async (req, res) => {
 
             When given a screenshot of a text conversation:
             1. Look at what they said
-            2. Generate exactly 5 CLEVER one-liner roasts
+            2. Generate exactly 4 CLEVER one-liner roasts
 
             Make every roast quotable. No swearing. Maximum wit.`;
         } else if (tone === 'Professional') {
@@ -229,7 +229,7 @@ app.post('/generate', async (req, res) => {
 
             When given a screenshot of a text conversation:
             1. Analyze the context for professional boundaries and formal propriety.
-            2. Generate exactly 5 reply options that demonstrate high competence and proper etiquette.
+            2. Generate exactly 4 reply options that demonstrate high competence and proper etiquette.
 
             Your replies should:
             - Be grammatically perfect, using complete sentences and standard punctuation.
@@ -248,7 +248,7 @@ app.post('/generate', async (req, res) => {
 
             When given a screenshot of a text conversation:
             1. Read what the other person said
-            2. Generate exactly 5 reply options that are dramatically over-the-top
+            2. Generate exactly 4 reply options that are dramatically over-the-top
 
             Keep replies 2-3 sentences. Maximum theatrics.`;
         } else if (tone === 'Simp') {
@@ -256,7 +256,7 @@ app.post('/generate', async (req, res) => {
 
             When given a screenshot of a text conversation:
             1. Read what the other person said
-            2. Generate exactly 5 reply options that are desperate and simpy
+            2. Generate exactly 4 reply options that are desperate and simpy
 
             Keep replies 2-3 sentences. Down bad energy.`;
         } else if (tone === 'Drunk') {
@@ -264,7 +264,7 @@ app.post('/generate', async (req, res) => {
 
             When given a screenshot of a text conversation:
             1. Read what the other person said
-            2. Generate exactly 5 reply options that sound drunk
+            2. Generate exactly 4 reply options that sound drunk
 
             Keep replies 2-3 sentences. Sloppy and unfiltered. Occasional typos.`;
         } else if (tone === 'Pickup Line') {
@@ -272,7 +272,7 @@ app.post('/generate', async (req, res) => {
 
             When given a screenshot of a text conversation:
             1. Read what the other person said
-            2. Generate exactly 5 reply options with cheesy pickup lines
+            2. Generate exactly 4 reply options with cheesy pickup lines
 
             Keep replies 2 sentences max. Maximum cheese.`;
         } else if (tone === 'Demolish') {
@@ -282,7 +282,7 @@ app.post('/generate', async (req, res) => {
 
             When given a screenshot of a text conversation:
             1. Look at what the other person said
-            2. Generate exactly 5 reply options that roast them HARD
+            2. Generate exactly 4 reply options that roast them HARD
 
             You're roasting THEM, not me. Be MEAN and VULGAR.`;
         } else if (tone === 'Brainrot') {
@@ -290,7 +290,7 @@ app.post('/generate', async (req, res) => {
 
             When given a screenshot of a text conversation:
             1. Read what the other person said
-            2. Generate exactly 5 reply options in pure brainrot speak
+            2. Generate exactly 4 reply options in pure brainrot speak
 
             Keep replies 2 sentences max. Maximum internet poisoning.`;
         } else {
@@ -300,20 +300,20 @@ app.post('/generate', async (req, res) => {
 
     // GLOBAL RULES
     if (notched && tone === 'Roast') {
-        // For notched Roast, allow all 5 to be long
+        // For notched Roast, allow all 4 to be long
         systemPrompt += `\n\nRULES:
-    - Generate exactly 5 responses, ALL using the tone/vibe above.
-    - ALL 5 responses can be full paragraphs. GO OFF. No length limits.
+    - Generate exactly 4 responses, ALL using the tone/vibe above.
+    - ALL 4 responses can be full paragraphs. GO OFF. No length limits.
     - Each response should be a different variation - different angle, wording, energy.
-    - Stay in character for ALL 5 responses. No exceptions.`;
+    - Stay in character for ALL 4 responses. No exceptions.`;
     } else {
         // Standard length rules for everything else
         systemPrompt += `\n\nRULES:
-    - Generate exactly 5 responses, ALL using the tone/vibe above.
-    - RESPONSE 1, 2, and 3: Keep SHORT (1-2 sentences max). Quick and punchy.
-    - RESPONSE 4 and 5: Can be longer (2-3 sentences max). More detailed.
+    - Generate exactly 4 responses, ALL using the tone/vibe above.
+    - RESPONSE 1: Keep SHORT (1-2 sentences max). Quick and punchy.
+    - RESPONSE 2, 3, and 4: Can be longer (2-3 sentences max). More detailed.
     - Each response should be a different variation - different angle, wording, energy.
-    - Stay in character for ALL 5 responses. No exceptions.`;
+    - Stay in character for ALL 4 responses. No exceptions.`;
     }
 
     if (context) {
@@ -331,7 +331,7 @@ app.post('/generate', async (req, res) => {
     // Add Instructions AGAIN in User Prompt (Sandwich)
     messageContent.push({
       type: "text",
-      text: `Analyze the ENTIRE conversation for context, then suggest exactly 5 responses.
+      text: `Analyze the ENTIRE conversation for context, then suggest exactly 4 responses.
       
       WHO IS WHO (CRITICAL):
       - GRAY / WHITE bubbles = THEM (the other person)
@@ -343,17 +343,17 @@ app.post('/generate', async (req, res) => {
       - Respond to what THEY last said, considering the full conversation context
       - DO NOT generate responses for the gray person. You are helping ME reply.
 
-      GIVE ME 5 DIFFERENT VARIATIONS:
-      - All 5 should match the tone/vibe I selected
+      GIVE ME 4 DIFFERENT VARIATIONS:
+      - All 4 should match the tone/vibe I selected
       - Each one should be slightly different (different angle, wording, energy)
       - Reference earlier parts of the convo if relevant
 
       LENGTH RULES (IMPORTANT):
-      - Response 1, 2 & 3: SHORT (1-2 sentences). Quick, punchy.
-      - Response 4 & 5: LONGER (2-3 sentences max). More detailed.
+      - Response 1: SHORT (1-2 sentences). Quick, punchy.
+      - Response 2, 3 & 4: LONGER (2-3 sentences max). More detailed.
 
       OUTPUT FORMAT:
-      Return ONLY a JSON array with exactly 5 strings: ["option1", "option2", "option3", "option4", "option5"]`
+      Return ONLY a JSON array with exactly 4 strings: ["option1", "option2", "option3", "option4"]`
     });
 
     // Add Images
