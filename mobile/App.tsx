@@ -30,7 +30,7 @@ const TONES = [
   { id: 'Professional', emoji: '💼', color: ['#1e3c72', '#2a5298'] },
   { id: 'Roast', emoji: '🔥', color: ['#ff416c', '#ff4b2b'] },
   { id: 'Flirty', emoji: '😏', color: ['#ff6b6b', '#ee5a24'] },
-  { id: 'Sarcastic', emoji: '🙄', color: ['#4776E6', '#8E54E9'] },
+  { id: 'Demolish', emoji: '💀', color: ['#4776E6', '#8E54E9'] },
   // Row 2
   { id: 'Dramatic', emoji: '👑', color: ['#f857a6', '#ff5858'] },
   { id: 'Brainrot', emoji: '🧠', color: ['#00d9ff', '#8b5cf6'] },
